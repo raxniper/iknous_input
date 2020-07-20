@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>I KNOU STUDY - ADMIN - VER.1.1</title>
+    <!-- style import -->
+    <link rel="stylesheet" href="./iknous-input-style.css">
+</head>
+<body>
+
+    <!-- result -->
+    <textarea class="contents" id="contents" placeholder="1. origin data"></textarea>
+    <textarea class="result" id="result" placeholder="2. array data"></textarea>
+
+    <div class="menu">
+        <!-- span : tip -->
+        <span>- &nbsp;&nbsp;/그룸문제번호, /보기문, /추가보기문, /보기그림, /추가보기그림</span><br>
+        <span>- &nbsp;&nbsp;/부정~/.부정, /밑줄~/.밑줄, /굵게~/.굵게, /줄, /빈칸</span><br>
+        <span>- &nbsp;&nbsp;/윗첨자~/.윗첨자, /아랫첨자~/.아랫첨자, /이미지~/.이미지</span><br><br>
+        <!-- textarea -->
+        <textarea id="txt_title" name="txt_title" placeholder="타이틀" readonly></textarea>
+        <textarea id="txt_object" name="txt_object" placeholder="과목명" onkeyup="post_title()"></textarea>
+        <textarea id="txt_kind" name="txt_kind" placeholder="종류" onkeyup="post_title()"></textarea>
+        <textarea id="txt_year" name="txt_year" placeholder="연도" onkeyup="post_title()"></textarea>
+        <textarea id="txt_seme" name="txt_seme" placeholder="학기" onkeyup="post_title()"></textarea>
+        <textarea id="txt_grade" name="txt_grade" placeholder="학년" onkeyup="post_title()"></textarea>
+        <textarea id="txt_prof" name="txt_prof" placeholder="교수명"></textarea>
+        <textarea id="txt_range" name="txt_range" placeholder="시험범위"></textarea>
+        <textarea id="txt_snum" name="txt_snum" placeholder="시작번호" onkeyup="question_count()"></textarea>
+        <textarea id="txt_enum" name="txt_enum" placeholder="종료번호" onkeyup="question_count()"></textarea>
+        <textarea id="txt_count" name="txt_count" placeholder="문항수" readonly></textarea>
+        <textarea id="txt_thumb" name="txt_thumb" placeholder="썸네일 주소"></textarea>
+        <textarea id="txt_answer" name="txt_answer" placeholder="정답"></textarea><br>
+        <!-- button -->
+        <button onclick="btn_lv1()">Lv.1</button>
+        <button onclick="btn_lv2()">Lv.2</button>
+    </div>
+
+    <textarea class="final" id="final" placeholder="3. html conversion"></textarea>
+
+    <!-- script import -->
+    <script type="text/javascript" src="./iknous-input-common.js"></script>
+</body>
+</html>
