@@ -837,7 +837,7 @@ function html_group_question_quiz(question){
     question = question.replaceAll('/굵게', '<span class="ibold">');
     question = question.replaceAll('/.굵게', '</span>');
     question = question.replaceAll('/줄', '<br>');
-    question = question.replaceAll('/빈칸', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
+    question = question.replaceAll('/빈칸', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
     question = question.replaceAll('/윗첨자', '<sup>');
     question = question.replaceAll('/.윗첨자', '</sup>');
     question = question.replaceAll('/아랫첨자', '<sub>');
