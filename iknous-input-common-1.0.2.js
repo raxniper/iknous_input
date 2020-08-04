@@ -60,8 +60,8 @@ function array_lv1_input(){
         var sText = String(sNum)+'.';
         var nText = String(nNum)+'.';
         // gIndex(group text index), sIndex(start text index), nIndex(next text index), eIndex(end text index)
-        var gsIndex = txt.value.indexOf('/'+String(sNum));
-        var gnIndex = txt.value.indexOf('/'+String(nNum));
+        var gsIndex = txt.value.indexOf('/그룹'+String(sNum));
+        var gnIndex = txt.value.indexOf('/그룹'+String(nNum));
         var sIndex = txt.value.indexOf(sText);
         var nIndex = txt.value.indexOf(nText);
         var eIndex = txt.value.length;
@@ -74,7 +74,7 @@ function array_lv1_input(){
             var origin = txt.value.substring(gsIndex, sIndex);
             // variable - exe
             var number = String(sNum);
-            var number_txt = '/묶음'+String(number);
+            var number_txt = '/그룹'+String(number);
             var number_length = number_txt.length;
             if((origin.indexOf('/보기문'))>0){  // 보기문
                 if((origin.indexOf('/추가보기문'))>0){  // 보기문 / 추가보기문
