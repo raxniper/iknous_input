@@ -20,7 +20,7 @@ html, body {
     font-size: 16px;
     line-height: 1.6em;
     font-weight: 300;
-    border-top: 1px solid #525252;
+    border-bottom: 1px solid #525252;
 }
 
 .result{
